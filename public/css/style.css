@@ -1,0 +1,128 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.logo{
+    text-align: center;
+}
+
+.titulo{
+    text-align: left;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: #1A73E8;
+}
+
+.call{
+    background-color: black;
+}
+
+.logo-text-container {
+    color:#FFFFFF;
+    text-align: center;
+  }
+  
+  .logo-text-container h1 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .rodape{
+	width: 100%;
+	color: white;
+	margin: 0;
+}
+
+hr{
+	border-color: black;
+	size: 10px;
+}
+
+.tabela1 li{
+	list-style: none;
+	text-align: center;
+}
+
+.tabela2 table li{
+	text-align: left;
+}
+
+.rodape .conteudo{
+	margin: 0 auto;
+}
+
+.btn-top{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 50px;
+	height: 50px;
+	border: solid 2px black;
+	background: white;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 30px;
+	color: black;
+}
+
+.btn-top:hover{
+	background: skyblue;
+}
+
+.custom-navbar {
+  background: linear-gradient(to right, #1A2980, #26D0CE);
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+.custom-navbar .navbar-brand {
+  color: white;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #FFD700 !important; 
+}
+
+.conteudo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 20px 0;
+  }
+  
+  .banners {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+	max-width: 1200px; /* opcional pra limitar */
+  }
+  
+  .banners img {
+	width: 400px;
+	max-width: 100%;
+	padding: 5px;
+	transition: transform 0.3s ease;
+  }
+  
+  .banners img:hover {
+	-webkit-filter: brightness(1.15);
+	transform: scale(1.05);
+  }

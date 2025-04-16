@@ -1,0 +1,33 @@
+<%- include ('partials/navbar.ejs') %>
+<%- include ('partials/header.ejs') %>
+ 
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h1>Pedidos</h1>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered trable-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Número do Pedido:</th>
+                        <th>Valor:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Chamando o Array de objetos-->
+                    <% pedidos.forEach(pedido => { %>
+                    <tr>  
+                        <td><%= pedido.numero %></td>
+                        <td><%= pedido.valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
+                    </tr>  
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<%- include ('partials/footer.ejs') %>
