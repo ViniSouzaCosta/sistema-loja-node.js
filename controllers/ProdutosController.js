@@ -67,7 +67,7 @@ router.get("/produtos/", (req, res) => {
           nome: "Blu-ray Digimon Adventure Remaster",
           preco: 199.00,
           categoria: "Mídia",
-          imagem: "/images/v1.jpg"
+          imagem: "/images/cd.jpg"
         }
       ];
       
