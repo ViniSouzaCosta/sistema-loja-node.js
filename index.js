@@ -10,11 +10,17 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
+app.use(express.urlencoded({ extended: false }));
+
+app.use(express.json());
+
+
 app.use("/", ProdutosController);
 
 app.use("/", ClientesController);
 
 app.use("/", PedidosController);
+
 
 app.get("/", (req, res) => {
     res.render("index")
